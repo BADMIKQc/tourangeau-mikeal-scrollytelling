@@ -1,0 +1,252 @@
+header{
+    background-color: red;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    margin: 0;
+    
+}
+.fleche{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 200px;
+   
+    margin: 20px;
+}
+.titre{
+
+    text-align: center;
+    font-family: "Raleway";
+}
+.mention{
+    font-size: 15px;
+    text-align: center;
+    font-family: "Raleway";
+    position: absolute;
+    bottom: 0px;
+    left: 15vw;
+    right: 15vw;
+}
+body{
+    overflow-x: hidden;
+    margin: 0;
+}
+:root {
+    --titre: #FFFFFC;
+    --sub: #757780;
+    --background1: #001011;
+    --background2: #98ce00;
+    --background3: #6ccff6;
+  }
+  h1{
+    margin: 0;
+    font-size: 5vw;
+  }
+  h2{
+    font-size: 3vw;
+  }
+section{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+#chapitre1{
+    background-image: url(../img/img_arriere_plan/1/1x/ciel.png);
+    overflow: hidden;
+}
+#chapitre2{
+    background-image: url(../img/img_arriere_plan/2/1x/noir.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100vw 100vh;
+}
+#chapitre3{
+    background-image: url(../img/img_arriere_plan/3/1x/Fichier\ 1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100vw 100vh;
+    position: relative;
+}
+#chapitre4{
+    background: orange;
+    position: relative;
+    background-image: url(../img/img_arriere_plan/4/1x/terre.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100vw 100vh;
+    
+}
+#chapitre5{
+    background: rgb(20, 1, 20);
+    position: relative;
+    overflow: hidden;
+}
+#chapitre6{
+    background: black;
+    position: relative;
+}
+
+.montagne{
+    position: absolute;
+    bottom: 5vh;
+   
+    height: 75vh;
+}
+.plaine{
+    position: absolute;
+    left: -20vw;
+    bottom: -60vh;
+    height: 100vh;
+    z-index: 2;
+    
+}
+.foret{
+    position: absolute;
+    left: -2000px;
+    bottom: -50vh;
+    height: 100vh;
+    z-index: 1;
+}
+.katanaSvg{
+    position: absolute;
+    height: 1000px;
+    left: 44vw;
+   top:10vh;
+}
+.dagueSvg{
+    position: absolute;
+    width: 20vw;
+}
+.epeeSvg{
+    position: absolute;
+    width: 20vw;
+}
+.lame{
+    position: absolute;
+    height: 500px;
+    left: 44vw;
+   top:10vh;
+}
+.manche{
+    position: absolute;
+    height: 250px;
+    left: 44vw;
+   top:70vh;
+}
+.socle{
+    position: absolute;
+    height: 50px;
+    left: 60vw;
+   top:50vh;
+}
+.soutien{
+    position: absolute;
+    height: 50px;
+    left: 35vw;
+   top:50vh;
+}
+.soleil{
+    position: absolute;
+    left: 40vw;
+}
+.arbre1{
+    position: absolute;
+    left: 40vw;
+    bottom: 27vh;
+    
+}
+.arbre2{
+    position: absolute;
+    left: 30vw;
+    bottom: 26vh;
+    
+}
+.arbre3{
+    position: absolute;
+    left: 50vw;
+    bottom: 29vh;
+    
+}
+.katana_meditation{
+    position: absolute;
+    left: 57vw;
+    bottom: 29vh; 
+    width: 200px;
+}
+.vague{
+    position: absolute;
+    right: 0;
+    bottom: -30vh;
+}
+.fantome_gauche{
+    position: absolute;
+    right: 20vw;
+    bottom: 0vh; 
+}
+.fantome_droite{
+    position: absolute;
+    right: 12vw;
+    bottom: 0vh; 
+}
+.bulle1{
+    position: absolute;
+    right: 30vw;
+    top: 0vh;
+}
+.bulle2{
+    position: absolute;
+    left: 12vw;
+    top: 12vh;
+    width: 500px;
+}
+.bulle3{
+    position: absolute;
+    left: 12vw;
+    top: 12vh;
+    width: 200px;
+}
+.bulle4{
+    position: absolute;
+    left: 12vw;
+    bottom: 20vh;
+    width: 300px;
+}
+
+.body2{
+    height: 200vw;
+}
+.sprite{
+    background-image: url(../img/img_personnages/marche_katana-boy/spritesheet_marche_katana-boy.png);
+    position: relative;
+    background-size: cover;
+   
+   
+    width: 50vh;
+    height: 50vh; 
+    border: #001011 solid;
+    background-repeat: repeat-x;
+    animation: pas 1s infinite steps(16);
+    animation-play-state: paused;
+  
+    
+}
+@keyframes pas{
+    from{background-position:0 0;}
+    to{background-position: 1600% 0};
+  }
+
+  .dude_medit_sprite{
+    background-image: url(../img/img_personnages/meditation/katana-boy/spritesheetmeditation_katana-boy.png);
+    position: absolute;
+    background-size: cover;
+    width: 200px;
+    height: 200px; 
+    
+    background-repeat: repeat-x;
+    animation: pas 1s infinite steps(16);
+    animation-play-state: paused;
+    z-index: 1;
+    right: 35vw;
+    bottom: 20vh;
+  }
