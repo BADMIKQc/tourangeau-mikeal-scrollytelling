@@ -36,3 +36,71 @@ window.addEventListener("scroll",function(){
 
 
 });
+
+
+//P2.2 B - INSTRUCTIONS 4
+
+const arbre1= document.querySelector(".arbre1");
+const arbre2= document.querySelector(".arbre2");
+const arbre3= document.querySelector(".arbre3");
+const soleil= document.querySelector(".soleil");
+const vague= document.querySelector(".vague");
+const bulle2= document.querySelector(".bulle2");
+const bulle3= document.querySelector(".bulle3");
+const bulle4= document.querySelector(".bulle4");
+
+
+
+gsap
+.timeline()
+
+.fromTo('.arbre1', 
+    { rotation: '-10deg' }, 
+    {duration: 1, rotation:"10deg", ease: "linear", yoyo: true,repeat: -1,},
+            
+  )
+  .fromTo('.arbre2', 
+    { rotation: '-10deg' }, 
+    {duration: 1, rotation:"10deg", ease: "linear", yoyo: true,repeat: -1,},
+    "-=1.3"     
+  )
+  .fromTo('.arbre3', 
+    { rotation: '-10deg' }, 
+    {duration: 1, rotation:"10deg", ease: "linear", yoyo: true,repeat: -1,},
+    "-=1.3"
+  );
+
+  gsap
+  .fromTo('.soleil', 
+  { rotation: '0deg' }, 
+  {duration: 3, rotation:"360deg", ease: "linear",repeat: -1,},
+          
+)
+
+gsap
+.fromTo('.vague', 
+{ x: "0%",y:"0%" }, 
+{duration: 30, x:"50%",y:"50%", ease: "linear",repeat: -1,},
+        
+)
+
+
+gsap
+.timeline()
+
+.fromTo('.bulle2', 
+{ x:"-10%",rotation: '-10deg' }, 
+{duration: 3,x:"10%", rotation:"10deg", ease: "linear", yoyo: true,repeat: -1,},
+"-=1.3"
+            
+  )
+  .fromTo('.bulle3', 
+  { x:"-10%",rotation: '-10deg' }, 
+  {duration: 1,x:"10%", rotation:"10deg", ease: "linear", yoyo: true,repeat: -1,},
+  "-=1.3"     
+  )
+  .fromTo('.bulle4', 
+    { x:"-10%",rotation: '-10deg' }, 
+    {duration: 3,x:"10%", rotation:"10deg", ease: "linear", yoyo: true,repeat: -1,},
+    "-=1.3"
+  );
