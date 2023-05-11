@@ -16,20 +16,56 @@
 </head>
 <body>
 <header>
+    <svg class='dessin' width="1053" height="450" viewBox="0 0 1053 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path id='dessin'd="M5 116C45 84.6667 136.4 24 182 32C239 42 290 126 368 126C446 126 525 11 605 6C685 0.999997 945 48 951 95C957 142 936 249 988 249C1040 249 1068 413 1031 445" stroke="black" stroke-width="10" stroke-linecap="round"/>
+        </svg>
 <h1 class="titre">Hantise</h1>
 <p class="mention">« Projet créé dans le cadre du cours Optimisation Web - Intégration multimédia - Collège Montmorency.
     © 2023 - Conception : Marie-Michelle Ouellet et Deuxième Nom| Développement Web : Marie-Michelle Ouellet. »</p>
 <img class="fleche"src="img/img_elements_visuels/fleche.png" alt="fleche">
+
+<ul class="technique-gsap"> 
+    <li>gsap animation</li> 
+    <ul> 
+        <li>repeat = infini</li> 
+        <li>yoyo donc refait l'animation à l'envers</li> 
+    </ul> 
+    <li>drawSVG</li> 
+    <li>scrollTrigger 
+        <ul> 
+            <li>trigger=header</li> 
+            <li>drawSVG grace au scroll triger</li> 
+        </ul> 
+    </li> 
+</ul> 
 </header>
 
 <main>
 
 <section id="chapitre1">
-    <h2 class="contenu1">Le comencement</h2>
+    <h2 class="contenu1">Le commencement</h2>
 <img class="montagne" src="img/img_arriere_plan/1/1x/montagne.png" alt="">
 <img class="plaine" src="img/img_arriere_plan/1/1x/terre_devant.png" alt="">
 <img class="foret" src="img/img_arriere_plan/1/1x/terre_arriere_arbre.png" alt="">
+<div class="sprite"></div>
+<ul class="technique-gsap"> 
+    <li>spritesheet</li> 
+    
+    <li>scrollTrigger 
+        <ul> 
+            <li>trigger avec le difilement pour la marche</li> 
+            <li>avant et arrière</li> 
+            <li>gsap animation fromTo</li> 
+        </ul> 
 
+    </li> 
+    <li>parallax 
+        <ul> 
+            <li>arriere plus lent que le devant</li> 
+            <li>scrub on</li>
+        </ul> 
+    </li> 
+</ul> 
 
 
 </section>
@@ -38,7 +74,16 @@
     <img class="katanaSvg" src="img/img_personnages/svg_morphing/SVG/katana.svg" alt="">
     <img class="dagueSvg" src="img/img_personnages/svg_morphing/SVG/dague.svg" alt="">
     <img class="epeeSvg" src="img/img_personnages/svg_morphing/SVG/epee.svg" alt="">
-
+    <ul class="technique-gsap"> 
+        <li>...</li> 
+        <li>...</li> 
+        <li>scrollTrigger 
+            <ul> 
+                <li>trigger=</li> 
+                <li>scrub on</li>
+            </ul> 
+        </li> 
+    </ul> 
 
 
 </section>
@@ -48,7 +93,20 @@
     <img class="manche" src="img/img_personnages/katana_detache/manche.png" alt="">
     <img class="socle" src="img/img_personnages/katana_detache/socle.png" alt="">
     <img class="soutien" src="img/img_personnages/katana_detache/soutien.png" alt="">
-
+    <ul class="technique-gsap"> 
+        
+        <li>gsap animation
+            <ul> 
+                <li>timeline qui va au milieu</li> 
+            </ul> 
+        </li> 
+        <li>scrollTrigger 
+            <ul> 
+                <li>animation avec la position du scroll</li> 
+                 <li>scrub on</li>
+            </ul> 
+        </li> 
+    </ul> 
 
 
 </section>
@@ -64,14 +122,42 @@
     <div class="dude_medit_sprite">
         
     </div>
-
+    <ul class="technique-gsap"> 
+        <li>timeline de gsap animation
+            <ul> 
+                <li>se produit au même moment</li> 
+                
+            </ul> 
+        </li> 
+       <li>spritesheet</li>
+        <li>scrollTrigger 
+            <ul> 
+                <li>animation avec la position du scroll</li> 
+                <li>scrub on</li> 
+            </ul> 
+        </li> 
+    </ul> 
 
 
 </section>
 <section id="chapitre5">
     <h2 class="contenu5">L'univers des Rêves</h2>
     <img class="vague" src="img/img_arriere_plan/5/1x/vague.png" alt="">
-
+    <ul class="technique-gsap"> 
+        <li>gsap animation
+            <ul> 
+                <li>direction bas-gauche</li> 
+                <li>repeat 2 fois</li> 
+            </ul> 
+        </li> 
+        <li></li> 
+        <li>scrollTrigger 
+            <ul> 
+                <li>animation avec la position du scroll</li> 
+                <li>scrub on</li> 
+            </ul> 
+        </li> 
+    </ul> 
 
 </section>
 <section id="chapitre6">
@@ -83,15 +169,38 @@
     <img class="bulle3" src="img/img_arriere_plan/6/1x/bulle.png" alt="">
     <img class="bulle4" src="img/img_arriere_plan/6/1x/bulle.png" alt="">
     <img class="perso_tue" src="img/img_personnages/tue_fantome/tue_fantome_main/tue_fantome_main_00000.png" alt="">
-    <img class="fantome_gauche" src="img/img_personnages/fantome/Fichier 1.png" alt="">
-    <img class="fantome_droite" src="img/img_personnages/fantome/Fichier 2.png" alt="">
+    <img class="fantome_gauche" src="img/img_personnages/fantome/fantome_1_g.png" alt="">
+    <img class="fantome_droite" src="img/img_personnages/fantome/fantome_2_d.png" alt="">
+
+    <svg class='ligne_drop'width="79" height="652" viewBox="0 0 79 652" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path id="ligne_drop"d="M6 6C52.6667 20 121.6 167.8 24 647" stroke="black" stroke-width="10" stroke-linecap="round"/>
+        </svg>
+        <ul class="technique-gsap"> 
+            <li>Motionpath
+                <ul> 
+                    <li>suit une ligne</li> 
+                    <li>deforme pas le personnage</li> 
+                </ul> 
+            </li> 
+            <li>gsap animation
+                <ul> 
+                    <li>fantome decouper durant animation du perso</li> 
+                     
+                </ul> 
+            </li> 
+            <li>scrollTrigger 
+                <ul> 
+                    <li>animation avec la position du scroll</li> 
+                    
+                </ul> 
+            </li> 
+        </ul> 
 
 
-
-
+  
 </main>
 
-
+<p class='fin'>Fin</p>
 
 
 
@@ -102,7 +211,19 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
 
+
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/MotionPathPlugin.min.js"></script>
+
+
+<!-- 
+<script src="https://assets.codepen.io/16327/MorphSVGPlugin3.min.js"></script>
+
+<script src="https://assets.codepen.io/16327/DrawSVGPlugin3.min.js"></script>
+-->
 
 
     <script src="script/script.js"></script>

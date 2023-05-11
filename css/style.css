@@ -2,6 +2,8 @@ header{
     background-image: url(../img/img_arriere_plan/debut.png);
     height: 100vh;
     width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
     position: relative;
     margin: 0;
     
@@ -31,6 +33,7 @@ header{
 body{
     overflow-x: hidden;
     margin: 0;
+    background-color: black;
 }
 :root {
     --titre: #FFFFFC;
@@ -55,10 +58,12 @@ section{
     width: 100vw;
     height: 100vh;
     position: relative;
+    border: red 1px solid;
 }
 #chapitre1{
     background-image: url(../img/img_arriere_plan/1/1x/ciel.png);
     overflow: hidden;
+   
 }
 #chapitre2{
     background-image: url(../img/img_arriere_plan/2/1x/noir.png);
@@ -195,6 +200,7 @@ section{
     right: 12vw;
     bottom: 0vh; 
     width: 10vw;
+    z-index: 2;
 }
 .bulle1{
     position: absolute;
@@ -222,9 +228,10 @@ section{
 }
 .perso_tue{
     position: absolute;
-    right: 25vw;
+    right: 20vw;
     top: 0vh;
     width: 25vw;
+    z-index: 1;
 }
 
 .body2{
@@ -232,13 +239,17 @@ section{
 }
 .sprite{
     background-image: url(../img/img_personnages/marche_katana-boy/spritesheet_marche_katana-boy.png);
-    position: relative;
+    position: absolute;
     background-size: cover;
+    left: 40vw;
+    bottom: 20vh;
+    z-index: 3;
+
    
    
-    width: 50vh;
-    height: 50vh; 
-    border: #001011 solid;
+    width: 30vh;
+    height: 30vh; 
+
     background-repeat: repeat-x;
     animation: pas 1s infinite steps(16);
     animation-play-state: paused;
@@ -279,3 +290,34 @@ section{
     position: relative;
     z-index: 1;
   }
+  .dessin{
+      position: absolute;
+
+    right: 5%;
+    top: 10%;
+  }
+  .fin{
+      color: white;
+      font-size: 10vw;
+      text-align: center;
+  }
+  ul.technique-gsap{
+    background: rgba(0,0,0,0.3);
+    color: white;
+    font-size: 10px;
+    font-family: monospace;
+    font-weight: 400;
+    width: auto;
+    display: inline-block;
+    padding: 10px 20px 12px 20px;
+    margin: 0;
+    max-width: 300px;
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+}
+
+ul.technique-gsap li{
+    margin: 5px 0;
+}
