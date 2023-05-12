@@ -61,12 +61,14 @@ section{
     border: red 1px solid;
 }
 #chapitre1{
+
     background-image: url(../img/img_arriere_plan/1/1x/ciel.png);
     overflow: hidden;
    
 }
 #chapitre2{
     background-image: url(../img/img_arriere_plan/2/1x/noir.png);
+   background-color: #fff;
     background-repeat: no-repeat;
     background-size: contain;
     background-size: 100vw 100vh;
@@ -118,19 +120,25 @@ section{
     height: 100vh;
     z-index: 1;
 }
-.katanaSvg{
+.katana{
     position: absolute;
     height: 1000px;
     left: 44vw;
    top:10vh;
+   visibility: hidden;
 }
-.dagueSvg{
+.dague{
+    position: absolute;
+    overflow: visible;
+    height: 1000px;
+    left: 44vw;
+   top:-5vh;
+    
+}
+.epee{
     position: absolute;
     width: 20vw;
-}
-.epeeSvg{
-    position: absolute;
-    width: 20vw;
+    visibility: hidden;
 }
 .lame{
     position: absolute;
