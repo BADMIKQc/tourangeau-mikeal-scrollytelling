@@ -1,10 +1,10 @@
-
+/*
 
 gsap.registerPlugin(MorphSVGPlugin);
 
 gsap.registerPlugin(DrawSVGPlugin);
 
-
+*/
 
 
 const fleche = document.querySelector('.fleche');
@@ -76,11 +76,11 @@ gsap.timeline({ scrollTrigger: {
     trigger: 'header',
   
   }})
-
+/* draw 
 
 .fromTo('#dessin', { drawSVG:'0% 0%' },{duration: 30,drawSVG:'0% 100%', ease: "linear"}) 
 
-
+*/
 
 
 
@@ -123,7 +123,7 @@ gsap.timeline({ scrollTrigger: {
   '<'   
 ),
   
-/* chapitre 2 */
+/* chapitre 2 
   
 
 gsap.to("#dague", {duration:3, morphSVG: {shape:"#katana"},scrollTrigger: {
@@ -144,7 +144,7 @@ gsap.to("#dague", {duration:3, morphSVG: {shape:"#katana"},scrollTrigger: {
   
   }}),
 
-      
+      */
 
 /* chapitre 3 */
 
