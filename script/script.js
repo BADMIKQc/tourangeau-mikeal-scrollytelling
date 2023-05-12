@@ -170,7 +170,7 @@ gsap.timeline({ scrollTrigger: {
   {duration: 6, y:"10%", ease: "linear", },'<'  )
   .fromTo('.socle', 
   { y: "0%", x:'0%' }, 
-  {duration: 6, y:"160vh%",x:'-17.5vw', ease: "linear", },'<'  )
+  {duration: 6, y:"160vh%",x:'-18vw', ease: "linear", },'<'  )
 
   .fromTo('.soutien', 
   { y: "0%",x:'0%' }, 

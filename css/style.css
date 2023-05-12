@@ -173,24 +173,28 @@ section{
     left: 40vw;
     bottom: 27vh;
     transform-origin: 50% 100%;
+    width: 10vw;
 }
 .arbre2{
     position: absolute;
     left: 30vw;
     bottom: 26vh;
     transform-origin: 50% 100%;
+    width: 10vw;
 }
 .arbre3{
     position: absolute;
     left: 50vw;
     bottom: 29vh;
     transform-origin: 50% 100%;
+    width: 10vw;
 }
 .katana_meditation{
     position: absolute;
     left: 57vw;
     bottom: 29vh; 
     width: 200px;
+    width: 10vw;
 }
 .vague{
     position: absolute;
@@ -250,7 +254,7 @@ section{
     position: absolute;
     background-size: cover;
     left: 40vw;
-    bottom: 20vh;
+    bottom: 10vh;
     z-index: 3;
 
    
@@ -273,8 +277,8 @@ section{
     background-image: url(../img/img_personnages/meditation/katana-boy/spritesheetmeditation_katana-boy.png);
     position: absolute;
     background-size: cover;
-    width: 200px;
-    height: 200px; 
+    width: 15vw;
+    height: 15vw;
     
     background-repeat: repeat-x;
     animation: pas 1s infinite steps(16);
